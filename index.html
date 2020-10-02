@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+  <meta name="description" content="A new Flutter project." />
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="flutter_web_component" />
+  <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+  <title>MyOpus on Web</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+      #app-container {
+         height: 890px;
+        width: 770px;
+        background-color: #c0c0c0;
+        margin: 0 auto;
+
+         border: 0px solid #c0c0c0;
+      }
+
+       .container {
+
+        width: 100%;
+      margin: 0 auto;
+
+
+      }
+
+
+
+
+      .topad {
+        width:970px;
+      height:140px;
+background-image: url("970x140_banner1.jpg");
+  text-align: center;
+  /*background-color: #E8E8E8; */
+  border: 2px solid #c0c0c0;
+  font-family:Arial;
+}
+
+.bottomad {
+        width: 970px;
+      height:90px;
+background-image: url("970x90_banner1.jpg");
+  text-align: center;
+ /* background-color: #E8E8E8; */
+  border: 2px solid #c0c0c0;
+  font-family:Arial;
+}
+
+.squaread {
+        width: 200px;
+      height:200px;
+background-image: url("200x200_square1.jpg");
+  text-align: center;
+  /*background-color: #E8E8E8; */
+  border: 2px solid #c0c0c0;
+  margin-bottom : 25px;
+   margin-left : 0px;
+  font-family:Arial;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+
+#app-container {
+         height: 640px;
+        width: 100%;
+        background-color: #c0c0c0;
+        margin: 0 auto;
+        padding: 0px;
+         border: 0px solid #c0c0c0;
+
+      }
+
+
+   .topad {
+   visibility: hidden;
+        width: 100%;
+      height:140px;
+background-image: url("970x140_banner1.jpg");
+  text-align: center;
+  /*background-color: #E8E8E8; */
+  border: 2px solid #c0c0c0;
+  font-family:Arial;
+   display: none;
+}
+
+.bottomad {
+visibility: hidden;
+         width: 100%;
+      height:90px;
+background-image: url("970x90_banner1.jpg");
+  text-align: center;
+ /* background-color: #E8E8E8; */
+  border: 2px solid #c0c0c0;
+  font-family:Arial;
+   display: none;
+}
+
+
+  .squaread {
+  visibility: hidden;
+        width: 200px;
+      height:200px;
+background-image: url("200x200_square1.jpg");
+  text-align: center;
+  /*background-color: #E8E8E8; */
+  border: 2px solid #c0c0c0;
+  margin-bottom : 25px;
+   margin-left : 5px;
+  font-family:Arial;
+   display: none;
+}
+
+
+
+}
+
+    </style>
+
+
+
+</head>
+<body>
+
+<script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+          navigator.serviceWorker.register("flutter_service_worker.js");
+        });
+      }
+    </script>
+
+<div align="center" class="container">
+
+<div align="center" class="topad">
+
+</div>
+
+
+<div align="center">
+<table >
+  <tr>
+
+    <td>
+      <div align="left">
+      <iframe id="app-container" src="flutter-app.html" width="100%"></iframe>
+      </div>
+    </td>
+
+    <td align="left" >
+
+      <div class="squaread">
+
+      </div>
+
+      <div class="squaread">
+
+      </div>
+
+      <div class="squaread">
+
+      </div>
+
+      <div class="squaread">
+
+      </div>
+
+
+    </td>
+  </tr>
+</table>
+</div>
+
+<div  align="center" class="bottomad">
+
+</div>
+
+</div> <!-- end container -->
+
+</body>
+</html>
